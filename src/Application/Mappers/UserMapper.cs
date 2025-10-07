@@ -31,7 +31,7 @@ public static class UserMapper
             Email = dto.Email,
             Age = dto.Age,
             PasswordHash = passwordHash,
-            PasswordSalt = passwordSalt
+            PasswordSalt = passwordSalt,            
         };
     }
     public static User ToUser(UserLoginDto dto, string passwordHash, string passwordSalt)
